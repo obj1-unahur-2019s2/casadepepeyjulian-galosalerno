@@ -6,7 +6,9 @@ Pepe y Julián viven juntos, y les gusta comprar cosas.
 De cada cosa nos interesa el precio, si es comida o no, y si es un electrodoméstico o no.
 
 ## Sobre las cosas que se compran
-En este modelo reducido, vamos a considerar las siguientes cosas que podrían ser interesantes para comprar: una heladera que vale 20000 pesos, una cama que sale 8000, una tira de asado que sale 350 pesos, un paquete de fideos que sale 50 pesos, y una plancha que vale 1200 pesos. Por las dudas aclaramos: la cama no es un electrodoméstico, la plancha sí.
+En este modelo reducido, vamos a considerar las siguientes cosas que podrían ser interesantes para comprar: una heladera que vale 20000 pesos, 
+	una cama que sale 8000, una tira de asado que sale 350 pesos, un paquete de fideos que sale 50 pesos, y una plancha que vale 1200 pesos. Por las dudas aclaramos: 
+	la cama no es un electrodoméstico, la plancha sí.
 
 Implementar, además de los objetos que representan cada cosa, un objeto que represente a la casa, que entienda los siguientes mensajes:
 - `comprar(cosa)`: registra que se ha comprado una cosa.
@@ -29,8 +31,10 @@ Agregar las siguientes cosas que pueden comprarse:
 - un microondas: 4200 pesos.
 - un kilo de cebollas: 25 pesos.
 - una compu: 500 dólares. Para saber el precio en pesos, multiplicar por la cotización del dólar. Agregar un objeto `dolar` al que se le pueda preguntar la `cotizacion()`. 
-- un "pack comida" que incluye un plato (que puede ser tira de asado, fideos o milanesas) y un aderezo (que puede ser la botella de salsa de tomates o el kilo de cebollas). Precio: la suma del precio de sus componentes.
-- un "pack regalo" que incluye una cantidad arbitraria de componentes. Se considera comida si todos sus componentes son comida, se considera electrodoméstico si al menos uno de los componentes es electrodoméstico. El precio es la suma del precio de todos sus componentes, con un descuento del 20%. 
+- un "pack comida" que incluye un plato (que puede ser tira de asado, fideos o milanesas) y un aderezo (que puede ser la botella de salsa de tomates o el kilo de cebollas). 
+	Precio: la suma del precio de sus componentes.
+- un "pack regalo" que incluye una cantidad arbitraria de componentes. Se considera comida si todos sus componentes son comida, se considera electrodoméstico si al 
+menos uno de los componentes es electrodoméstico. El precio es la suma del precio de todos sus componentes, con un descuento del 20%. 
 
 **Pregunta**  
 para lograr que la casa pueda comprar estas cosas nuevas, ¿qué hubo que cambiar en la definición del objeto que representa la casa? Si hay que tocar poco, o nada, ¿qué concepto nos ayuda?
