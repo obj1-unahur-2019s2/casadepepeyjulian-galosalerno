@@ -44,7 +44,8 @@ para lograr que la casa pueda comprar estas cosas nuevas, ¿qué hubo que cambia
 Agreguemos algunas consultas más para hacerse a la casa
 - `gastoEnComida()`: el precio total de _la comida_ comprada por la casa. O sea, hay que contemplar solamente las cosas que son comida. 
 - `hayElectrodomesticosBaratos()`: indica si la casa compró, al menos, un electrodoméstico de menos de 3000 pesos.
-- `preciosDeElectrodomesticos()`: una colección con **el precio** de cada electrodoméstico que compró la casa. P.ej. si la casa compró la heladera, la tira de asado, la plancha, el microondas y el kilo de cebollas, entonces el resultado debe ser `[20000, 1200, 4200]`. 
+- `preciosDeElectrodomesticos()`: una colección con **el precio** de cada electrodoméstico que compró la casa. P.ej. si la casa compró la heladera, la tira de asado, 
+la plancha, el microondas y el kilo de cebollas, entonces el resultado debe ser `[20000, 1200, 4200]`. 
 - `nivelEnAumento()`: indica si el precio de la última cosa comprada es el doble del precio de la primera, o más.
 - `primeraComidaComprada()`: devuelve la primer cosa que se compró que es comida. 
 

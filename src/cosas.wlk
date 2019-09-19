@@ -64,8 +64,9 @@ object packDeComida{
  	
 }	
 object packDeRegalo{
-	var packDeRegalo = []
-	method esComida(){return packDeRegalo.all({unaCosa=>unaCosa.esComida()})}
-	method esElectrodomestico() {return packDeRegalo.any({unaCosa=>unaCosa.esElectrodomesico()})}
-	method precio(){return packDeRegalo.sum({unaCosa=>unaCosa.precio()})*0.8}
+	var pack = []
+	method agregarAlPack(unaCosa){pack.add(unaCosa)}
+	method esComida(){return pack.all({unaCosa=>unaCosa.esComida()})}
+	method esElectrodomestico() {return pack.any({unaCosa=>unaCosa.esElectrodomestico()})}
+	method precio(){return pack.sum({unaCosa=>unaCosa.precio()})*0.8}
 }

@@ -48,5 +48,27 @@ object casaDePepeYJulian {
 	//	return cosas.filter({unaCosa=>unaCosa.esComida()}).size()<2 
 	 return  cosas.count({unaCosa=>unaCosa.esComida()}) < 2			
 	}
+
+	method gastoEnComida(){
+			
+		return cosas.filter{unaCosa=>unaCosa.esComida()}.sum{unaCosa=>unaCosa.precio()}
+	}
+	method hayElectrodomesticosBaratos(){
+		
+		return cosas.filter{unaCosa=>unaCosa.esElectrodomestico()}.any{unaCosa=>unaCosa.precio()<3000}
+	}
+	method preciosDeElectrodomesticos(){
+		
+		return self.electrodomesticosComprados().map{unaCosa=>unaCosa.precio()}
+	}
+	method nivelEnAumento(){
+		
+		return cosas.last().precio()>= cosas.first().precio() * 2
+		
+	}
+	method primerComidaComprada(){
+		
+		return cosas.find{unaCosa=>unaCosa.esComida()}
+	}
 	
 }
